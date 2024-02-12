@@ -1,7 +1,3 @@
-import Bowman from "./characters/Bowman";
-import Magician from "./characters/Magician";
-import Undead from "./characters/Undead";
-
 /**
  * Класс, представляющий персонажей команды
  *
@@ -16,8 +12,8 @@ import Undead from "./characters/Undead";
  * ```
  * */
 export default class Team {
-  constructor(characters){
-   this.characters = characters;
+  constructor(characters) {
+    this.characters = characters;
   }
   // static characters(){
   //   return [Bowman, Magician, Undead]
