@@ -26,13 +26,14 @@ export function* characterGenerator(allowedTypes, maxLevel) {
  * */
 export function generateTeam(allowedTypes, maxLevel, characterCount) {
   const team = [];
+  // const testTeam =
   // console.log()
   const character = characterGenerator(allowedTypes, maxLevel);
   // console.log(allowedTypes + 'allowed')
   for (let i = 0; i < characterCount; i += 1) {
     // console.log(character.next().value)
+    // team.push(character.next().value);
     team.push(character.next().value);
   }
-  // console.log(new Team(team))
   return new Team(team);
 }
